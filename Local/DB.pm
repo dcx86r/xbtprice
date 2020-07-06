@@ -33,7 +33,7 @@ sub fetch {
 	my %row;
 	my @rows;
 	my $statement = "SELECT time, printf(\"%.2f\", price) AS price from data ";
-	$statement .= "WHERE time BETWEEN ? AND ? ORDER BY time DESC";
+	$statement .= "WHERE time BETWEEN ? AND ? ORDER BY time ASC";
 	my $sth = $self->{dbh}->prepare($statement);
 	return "no period requested" unless $period;
 # time frame for query
