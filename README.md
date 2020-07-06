@@ -9,6 +9,6 @@ Price charting application written in Perl using a public API for price data.
 
 ### ToDo
 
-- [ ] Add query test code
+- [x] Add query test code
 - [ ] Add server-side code
 - [ ] Tidy up front-end
