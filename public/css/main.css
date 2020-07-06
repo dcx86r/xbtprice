@@ -1,0 +1,33 @@
+body {
+	height:100vh;
+	width:100vw;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	background:#DDD;
+}
+
+#noscript {
+	background:#A71A1A;
+	text-align:center;
+	color:#FFF;
+	padding:1rem;
+}
+
+.tv-lightweight-charts {
+	margin:auto;
+}
+
+header, footer {
+	text-align:center;
+	color:#D0C8C6;
+	background:#555;
+	font-family:sans-serif;
+	padding:1.5rem;
+}
+
+#GHicon {
+	height:1.5rem;
+	cursor:pointer;
+	vertical-align:middle;
+}
