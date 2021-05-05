@@ -97,6 +97,8 @@ die "Can't load sources\n" unless $ok;
 
 my $loop = Mojo::IOLoop->singleton;
 
+# block until time is right
+while (strftime("%M", localtime) % 5) { sleep 5 }
 my $ret = store(request(\%urls, \%token), $dbfile);
 warn "No price data! " . strftime("%F", localtime) . "\n" unless $ret;
 
